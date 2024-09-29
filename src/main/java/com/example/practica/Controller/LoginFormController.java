@@ -47,7 +47,7 @@ public class LoginFormController {
             messageLabel.setText("Успешный вход!");
             User user = new User(username, password, "Photographer");
             AuthenticationService.setCurrentUser(user);
-            openDoctorForm();
+            openPhotograpForm();
         } else {
             messageLabel.setText("Неправильное имя или пароль");
         }
@@ -63,8 +63,8 @@ public class LoginFormController {
         return DBConnectionController.searchInDB(query, fullName.getFirstName(), fullName.getLastName(), password);
     }
 
-    // Открытие формы доктора
-    private void openDoctorForm() {
+    // Открытие формы фoтогрофа
+    private void openPhotograpForm() {
         try {
             FXMLLoader loader = new FXMLLoader(getClass().getResource("/com/example/practica/photograh_form.fxml"));
             Parent root = loader.load();
