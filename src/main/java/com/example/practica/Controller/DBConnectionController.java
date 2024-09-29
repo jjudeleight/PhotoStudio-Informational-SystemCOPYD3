@@ -12,7 +12,7 @@
     public class DBConnectionController {
 
         // Информация для подключения к базе данных
-        private static final String URL = "jdbc:postgresql://localhost:5432/Sanatorium";
+        private static final String URL = "jdbc:postgresql://localhost:5432/Photostudia";
         private static final String USERNAME = "postgres";
         private static final String PASSWORD = "2426574323";
 
